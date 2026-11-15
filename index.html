@@ -297,9 +297,12 @@
       <div id="listaCarrito">Todavía no agregaste productos.</div>
       <p class="total" id="total">Total: Bs 0</p>
 
-      <input id="nombreCliente" type="text" placeholder="Escribe tu nombre">
-      <input id="Direccion" type="text" placeholder="Escribe tu dirección">
-      <textarea id="Detalles" placeholder="Describe si es para envio de provincias o medio de transporte especifico"></textarea>
+
+ <input id="nombreCliente" type="text" placeholder="Escribe tu nombre">
+      <input id="telefonoClient" type="text" placeholder="Escribe tu dirección">
+      <textarea id="observaciones" placeholder="Describe si es para envio de provincias o medio de transporte especifico"></textarea>
+
+      
 
       <button class="enviar" id="botonEnviar" onclick="enviarPedido()" disabled>
         Enviar pedido por WhatsApp
@@ -503,6 +506,10 @@
       var telefono = document.getElementById("telefonoCliente").value;
       var observaciones = document.getElementById("observaciones").value;
 
+
+ 
+
+      
       if (nombre == "" || telefono == "") {
         alert("Por favor, escribe tu nombre y telefono.");
         return;
